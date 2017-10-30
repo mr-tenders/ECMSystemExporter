@@ -1,12 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net461;netstandard1.6;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+    <AssemblyName>ECMSystemExporter.Core</AssemblyName>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="Yaml.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>
-
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
