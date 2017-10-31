@@ -6,6 +6,7 @@
     <OutputType>Library</OutputType>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Config.fs" />
     <Compile Include="Yaml.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>

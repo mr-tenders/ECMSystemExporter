@@ -1,10 +1,11 @@
 source https://www.nuget.org/api/v2
 
 framework: net461, netstandard1.6, netstandard2.0, netcoreapp2.0
-nuget Expecto
 nuget FAKE
 nuget FSharp.Core
+nuget YamlDotNet 4.2.2
 
+# Test
 nuget Microsoft.NET.Test.Sdk 15.3.0
 nuget Xunit 2.3.0
 clitool dotnet-xunit
